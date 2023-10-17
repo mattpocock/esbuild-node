@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "tsc",
-    "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js",
     "dev": "run-p dev:*",
     "dev:tsc": "tsc --watch --preserveWatchOutput",
     "dev:node": "node --watch dist/index.js",
